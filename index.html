@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!------------------ Header of the files -------------->
+    
+    <header>
+        <nav class="container">
+            <h4>BlogSpace</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About-Me</a></li>
+                <li><a href="#">Recent Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!------------------ form --------------------------->
+    <form class="container" onsubmit="return validateForm()" id="form-el">
+        <label for="title-eL">Title: </label>
+        <input type="text" id="title-eL">
+    
+        <label for="body-el">Body:</label>
+        <textarea name="body" id="body-el"></textarea>
+        <button id="form-submit">SUBMIT</button>
+    </form>
+    
+    
+    <!-- -------------------Blog Space-------------------->
+    <div id="blog-container" class="container"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
